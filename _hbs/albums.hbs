@@ -1,0 +1,35 @@
+<!-- albums overview -->
+<section class="all">
+	  <header class="page-title">
+	    <h1>All Albums</h1>
+	  </header>
+	  <table>
+	    <thead>
+	      <tr>
+	        <th class="artist">Artist</th>
+	        <th class="title">Title</th>
+	        <th class="format">Format</th>
+	        <th class="date">Added</th>
+	      </tr>
+	    </thead>
+	    <tbody class="albums">
+
+	    </tbody>
+	  </table>
+	</section>
+	<section class="add">
+	  <header class="subtitle">
+	    <h1>Add Album</h1>
+	  </header>
+	  <form class="add" action="" method="post" accept-charset="utf-8">
+	    <input type="text" name="artist" placeholder="artist" class="artist-input" value=""/>
+	    <input type="text" name="title" placeholder="title" class="title-input" value=""/>
+	    <select name="format" class="format-select">
+	      <option value="">--format--</option>
+	      <option value="CD">CD</option>
+	      <option value="LP">LP</option>
+	      <option value="Cassette">Cassette</option>
+	    </select>
+	    <input type="submit" class="album-submit" value="submit"/>
+	  </form>
+	</section>
