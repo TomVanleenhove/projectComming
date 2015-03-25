@@ -2,7 +2,7 @@
 class DAO {
 
 	private static $dbHost = "localhost";
-	private static $dbName = "komenDatabase";
+	private static $dbName = "komen_opstaan";
 	private static $dbUser = "root";
 	private static $dbPass = "root";
 
