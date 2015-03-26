@@ -9,6 +9,25 @@ function init() {
 	Window.Application = new Application();
 	Backbone.history.start();
 
+	$("#scrollto1").click(function(e){
+		e.preventDefault();
+
+			console.log("test");
+			$(".scrollcontainer").addClass("movebitch");
+		});
+		$("#scrollto2").click(function(e){
+		e.preventDefault();
+
+			console.log("test");
+			$(".scrollcontainer").addClass("movebitch2");
+		});
+		$("#scrollto3").click(function(e){
+		e.preventDefault();
+
+			console.log("test");
+			$(".scrollcontainer").addClass("movebitch3");
+		});
+
 }
 
 init();

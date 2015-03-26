@@ -97,50 +97,116 @@ td, th {
 	margin-bottom: 30px;
 }
 
-.artist-filter, .title-filter {
-	width: 200px;
-	margin-right: 40px;
-	padding: 5px;
-	font-size: 0.6em;
+
+
+
+
+body{
+    font-size: 62.5%;
+    font-family: bad;
+    color: #000000;
+    background-color: #439387;
 }
 
-.back {
-	display: block;
-	margin-bottom: 20px;
+
+a {
+	font-size: 4em;
 }
 
-.subtitle {
-	font-size: 1.3em;
-	text-decoration: underline;
+body {
+	width: 320px;
+	overflow: hidden;
+	height: 500px;
 }
 
-.delete {
-	width: 50px;
+
+
+#container1, #container2, #container3, .scrollcontainer, .scrollcontainer2 {
+	height: 500px;
 }
 
-.artist-input,
-.title-input,
-.album-submit,
-.format-select {
-	font-size: 0.9em;
-	display: block;
-	margin: 10px 0;
-	padding: 5px;
+#container1, #container2, #container3 {
+	position: relative;
+	width: 320px;
+	float: left;
 }
 
-.artist-input,
-.title-input {
-	width: 300px;
+img {
+	position: absolute;
+	left: -100px;
+	top: -100px;
 }
 
-.album-submit {
-	margin-top: 30px;
+#scrollto1 {
+	position: absolute;
+	width: 320px;
+	margin-top: 300px;
+	text-align: center;
 }
 
-.add {
-	margin-top: 20px;
+#scrollto2 {
+	position: absolute;
+	width: 320px;
+	margin-top: 300px;
+	text-align: center;
 }
 
-.error {
-	border: 1px solid red;
+#scrollto3 {
+	position: absolute;
+	width: 320px;
+	margin-top: 300px;
+	text-align: center;
 }
+
+.scrollcontainer {
+	width: 960px;
+	transition: 			all 1s cubic-bezier(.68,-0.07,.38,1.22);
+    -webkit-transition: 	all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Chrome & Safari **/
+    -moz-transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Firefox **/
+    -o-transition: 			all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Opera **/
+
+
+}
+
+.scrollcontainer2 {
+	width: 320px;
+	overflow: hidden;
+}
+
+.movebitch {
+	transform: 		   translate(-320px,0);
+    -webkit-transform: translate(-320px,0);
+    -o-transform:      translate(-320px,0); 
+    -moz-transform:    translate(-320px,0);
+}
+
+.movebitch2 {
+	transform: 		   translate(-640px,0);
+    -webkit-transform: translate(-640px,0);
+    -o-transform:      translate(-640px,0); 
+    -moz-transform:    translate(-640px,0);
+}
+
+.movebitch3 {
+	transform: 		   translate(-960px,0);
+    -webkit-transform: translate(-960px,0);
+    -o-transform:      translate(-960px,0); 
+    -moz-transform:    translate(-960px,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

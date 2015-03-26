@@ -17,7 +17,11 @@ var HomeView = Backbone.View.extend({
 		
 
 		this.collection.create({
-     		 text: "test"
+     		voornaam: this.$el.find('.voornaam').val(),
+			achternaam: this.$el.find('.achternaam').val(),
+			adres: this.$el.find('.adres').val(),
+			groep_id: "1",
+			image: "image",
 		});
 
 	
