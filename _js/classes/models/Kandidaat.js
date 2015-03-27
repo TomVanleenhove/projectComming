@@ -1,14 +1,14 @@
 var Kandidaat = Backbone.Model.extend({
 
 	defaults: {
-		voornaam: "voornaam",
-		achternaam: "achternaam",
+		naam: "voornaam",
 		adres: "adres",
+		geslacht: "geslacht",
 		groep_id: "1",
 		image: "image",
 	},
 
-	urlRoot: '/Maart_2015_Major_IV/projectComming/api/kandidaten',
+	urlRoot: '/devine3/major4/projectComming/api/kandidaten',
 
 	
 	sync: function(method, model, options) {

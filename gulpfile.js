@@ -7,7 +7,23 @@ var gulp = require('gulp'),
 		sourcemaps = require('gulp-sourcemaps'),
 		stylish = require('jshint-stylish'),
 		uglify = require('gulp-uglify');
+		compass = require('gulp-compass'),
 
+gulp.task('styles', function(){
+	return gulp.src('./_scss/*.scss')
+		.pipe(compass({
+			config_file: './config.rb',
+			css: './css',
+			sass: './_scss',
+			environment: 'production'
+		}))
+		.on('error', function(err){
+			gutil.log(err.message);
+			gutil.beep();
+			this.emit('end');
+		})
+		.pipe(gulp.dest('./css'));
+});
 gulp.task('lint', function(){
 	return gulp.src('js/src/**/*.js')
 		.pipe(jshint())
@@ -36,6 +52,7 @@ gulp.task('scripts', function(){
 		.pipe(gulp.dest('./js'));
 });
 
-gulp.task('watch', ['scripts'], function(){
+gulp.task('watch', ['scripts','styles'], function(){
 	gulp.watch(['_js/**/*.js','_hbs/**/*.hbs'], ['scripts']);
+	gulp.watch(['_scss/*.scss'], ['styles']);
 });

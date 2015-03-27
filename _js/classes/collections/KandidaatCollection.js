@@ -5,7 +5,7 @@ var KandidaatCollection = Backbone.Collection.extend({
 
 
 	model: Kandidaat,
-	url: '/Maart_2015_Major_IV/projectComming/api/kandidaten',
+	url: '/devine3/major4/projectComming/api/kandidaten',
 
 	initialize: function(options){
 		if(options){
@@ -32,7 +32,7 @@ var KandidaatCollection = Backbone.Collection.extend({
 			this.url = "/2014_2015/twitter/api/tweets/tags/" + this.tag
 			return;
 		}
-		this.url = '/Maart_2015_Major_IV/projectComming/api/kandidaten';
+		this.url = '/devine3/major4/projectComming/api/kandidaten';
 
 	},
 });

@@ -1,55 +1,27 @@
-var KandidaatCollection = require('../collections/KandidaatCollection.js');
-var KandidaatView = require('./KandidaatView.js');
-var template = require('../../../_hbs/home.hbs');
+var template = require('../../../_hbs/intro.hbs');
 
 var HomeView = Backbone.View.extend({
 
-
+	tagName: "article",
+	id: "containerbig1",
 	template: template,
 	
 	events: {
-		'click .tweet': 'addKandidaat'
+		'click .showtutorial': 'changeLink'
 	},
-
-	addKandidaat: function(e){
+	changeLink: function(e){
 		e.preventDefault();
-
-		
-
-		this.collection.create({
-     		voornaam: this.$el.find('.voornaam').val(),
-			achternaam: this.$el.find('.achternaam').val(),
-			adres: this.$el.find('.adres').val(),
-			groep_id: "1",
-			image: "image",
-		});
-
-	
+		window.location.href = '#tutorial';
 	},
-
 	initialize: function(){
-		this.collection = new KandidaatCollection();
-		this.listenTo(	this.collection, 'sync', this.renderKandidaten);
-		this.collection.fetch();
+
 	},
-
-	renderKandidaten: function(){
-		this.$tweets.empty();
-		this.collection.sort();
-		this.collection.forEach(this.renderKandidaat, this);
+	removeSelf: function(){
+		setInterval(function(){this.remove()}.bind(this), 1000);
 	},
-
-	renderKandidaat: function(model){
-		var view = new KandidaatView({
-			model: model
-		});
-
-		this.$tweets.append(view.render().el);
-	},
-
 	render: function(){
 		this.$el.html(this.template());
-		this.$tweets = this.$el.find('.tweets');
+		//this.$tweets = this.$el.find('.tweets');
 
 		return this;
 
