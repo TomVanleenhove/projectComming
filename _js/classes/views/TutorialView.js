@@ -17,13 +17,14 @@ var TutorialView = Backbone.View.extend({
 		'click #scrollto5': 'scroll',
 		'click #scrollto6': 'scroll',
 		'click #scrollto7': 'scroll',
+		'click #scrolltoGroup': 'endTutorial',
 		'click #cLocation': 'fillWithCurrentL'
 	},
 	initialize: function(){
 		this.collection = new KandidaatCollection();
 		this.listenTo(	this.collection, 'sync', this.kandidaatToegevoeg);
 		this.collection.fetch();
-		this.kandidate = {naam:null, adres:null, geslacht:null, groep_id:null, image:null}
+		this.kandidate = {naam:null, adres:null, geslacht:null, groep_id:null, imageName:null, image:null, paswoord:null}
 	},
 	kandidaatToegevoeg: function(something){
 		console.log("kandidaat toegevoegd");
@@ -84,18 +85,23 @@ var TutorialView = Backbone.View.extend({
 		    	if($(".addfoto").val() === ''){
 	    			return
 	    		}else{
-	    			console.log('niet djensen');
 	    			var ext = $('.addfoto').val().split('.').pop().toLowerCase();
 					if($.inArray(ext, ['png','jpg','jpeg']) == -1){
 						console.log("verkeerde file type");
 					    return
 					}
-	    			this.kandidate.image = this.kandidate.naam + new Date().getTime().toString() +"." + ext;
-	    			console.log(this.kandidate.image);
+	    			this.kandidate.imageName = this.kandidate.naam + new Date().getTime().toString() +"." + ext;
 	    			this.kandidate.geslacht = $('input[name=gender]:checked').val();
+	    			this.kandidate.image = document.getElementById('addfoto').files[document.getElementById('addfoto').files.length - 1];
 	    		}
-	   			this.addKandidate();
 		        break;
+		    case "8":
+		    	if($(".txtPass").val().length === 0){
+	    			return
+	    		}else{
+	    			this.kandidate.paswoord = $(".txtPass").val();
+	    		}
+		    	break;
 		}
 		this.sunset.changeStep(e.currentTarget.id.slice(-1));
 		$(".scrollcontainer").addClass("movebitch" + e.currentTarget.id.slice(-1));
