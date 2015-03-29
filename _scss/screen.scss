@@ -43,7 +43,7 @@ body{
     width: 320px;
 
 }
-#containerbig1 h1 span {
+#containerbig1 h1 span, #introscherm h1 span{
 	display: none;
 }
 
@@ -62,7 +62,20 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+#introscherm h1{
+	margin:0 auto;
+	background: url('../assets/images/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 250px;
+    display:block;
+}
+#introscherm p{
+	width:100%;
+	text-align: center;
+	font-size: 15pt;
+}
 #container3 h1 span, #container5 h1 span, #container6 h1 span {
 	display: none;
 }
@@ -1372,4 +1385,29 @@ input[type=radio] {
     -webkit-transition: all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Chrome & Safari **/
     -moz-transition: 	all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Firefox **/
     -o-transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Opera **/
+}
+#introscherm{
+	width: 100%;
+}
+#introscherm a{
+	text-decoration: none;
+	margin: 12px auto;
+	font-family: "bigg";
+	color: black;
+	border-radius: 15px;
+	display: block;
+	width: 210px;
+	text-align: center;
+	border: solid 7px;
+	font-size: 13pt;
+	padding: 8px 18px;
+}
+#introscherm a#goToHome{
+	border-color: #f27405
+}
+#introscherm a#goToVote1{
+	border-color: #2be3fe
+}
+#introscherm a#goToHVote2{
+	border-color: #e62945
 }
