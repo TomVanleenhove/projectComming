@@ -2,7 +2,9 @@ var template = require('../../../_hbs/hygiene.hbs');
 
 var HygieneView = Backbone.View.extend({
 	template: template,
-	
+	tagName: "article",
+	id: "hygiene",
+	className: "stemming",
 	events: {
 		'click #refreshBtn': 'refresh'
 	},

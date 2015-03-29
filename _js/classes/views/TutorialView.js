@@ -17,6 +17,7 @@ var TutorialView = Backbone.View.extend({
 		'click #scrollto5': 'scroll',
 		'click #scrollto6': 'scroll',
 		'click #scrollto7': 'scroll',
+		'click #scrolltoend': 'uploadData',
 		'click #scrolltoGroup': 'endTutorial',
 		'click #cLocation': 'fillWithCurrentL'
 	},
@@ -61,6 +62,7 @@ var TutorialView = Backbone.View.extend({
 	},
 	scroll: function(e){
 		e.preventDefault();
+		console.log(e.currentTarget.id);
 		switch(e.currentTarget.id.slice(-1)){
 	    	case "2":
 	    		if($(".txtnaam").val().length === 0 || $('input[name=gender]:checked').val() === undefined){
@@ -93,9 +95,10 @@ var TutorialView = Backbone.View.extend({
 	    			this.kandidate.imageName = this.kandidate.naam + new Date().getTime().toString() +"." + ext;
 	    			this.kandidate.geslacht = $('input[name=gender]:checked').val();
 	    			this.kandidate.image = document.getElementById('addfoto').files[document.getElementById('addfoto').files.length - 1];
+	    			$('#sunset').addClass('sundown');
 	    		}
 		        break;
-		    case "8":
+		    case "d":
 		    	if($(".txtPass").val().length === 0){
 	    			return
 	    		}else{
@@ -106,13 +109,23 @@ var TutorialView = Backbone.View.extend({
 		this.sunset.changeStep(e.currentTarget.id.slice(-1));
 		$(".scrollcontainer").addClass("movebitch" + e.currentTarget.id.slice(-1));
 	},
+	uploadData: function(){
+		if($(".txtPass").val().length === 0){
+	    	return
+	    }else{
+	    	this.kandidate.paswoord = $(".txtPass").val();
+
+	    }
+	},
 	addKandidate: function(){
+		
 		this.collection.create({
 			naam: this.kandidate.naam,
 			adres: this.kandidate.adres,
 			geslacht: this.kandidate.geslacht,
 			groep_id: 0,
-			image: this.kandidate.image,
+			image: this.kandidate.imageName,
+			paswoord: this.kandidate.paswoord,
 		});
 	},
 	renderSunset: function(){

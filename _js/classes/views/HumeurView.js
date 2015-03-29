@@ -2,6 +2,9 @@ var template = require('../../../_hbs/humeur.hbs');
 
 var HumeurView = Backbone.View.extend({
 	template: template,
+	tagName: "article",
+	id: "humeur",
+	className: "stemming",
 	
 	events: {
 		'click #refreshBtn': 'refresh'

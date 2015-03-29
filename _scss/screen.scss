@@ -1,5 +1,8 @@
 @import 'base';
 @import "compass/reset";
+
+
+
 @font-face {
     font-family: 'abelregular';
     src: url('../assets/fonts/Abel-Regular-webfont.eot');
@@ -25,6 +28,8 @@
     font-style: normal;
 
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +40,7 @@ body{
     font-family: abelregular;
     color: #000000;
     background-color: #fff;
+    width: 320px;
 
 }
 #containerbig1 h1 span {
@@ -109,6 +115,379 @@ body{
 	z-index: -10;
 }
 
+.borderaroundorange {
+	border-radius: 10px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 340px;
+	border: 4px solid #FDEAD7;
+	z-index: -10;
+}
+
+.borderaroundorange2 {
+	border-radius: 10px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 390px;
+	border: 4px solid #FDEAD7;
+	z-index: -10;
+}
+
+.borderaround2 {
+	border-radius: 10px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 340px;
+	border: 4px solid #D1D1D1;
+	z-index: -10;
+}
+
+.borderaroundgastheer {
+	border-radius: 10px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 390px;
+	border: 4px solid #D1D1D1;
+	z-index: -10;
+}
+
+.agendaicon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+    background: url('../assets/images/agenda.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 67px;
+    top: 305px;
+}
+
+.stars {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+    background: url('../assets/images/stars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50px;
+    top: 100px;
+}
+
+.stars2 {
+	position: absolute;
+	width: 220px;
+	height: 80px;
+    background: url('../assets/images/stars2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 65px;
+    top: 240px;
+}
+
+#containerwinnaarnafoto a {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 270px;
+	font-size: 2em;
+	font-family: abelregular;
+	text-decoration: none;
+}
+
+.selfiegroep {
+	position: absolute;
+	width: 220px;
+	height: 160px;
+    background-color: #ff2322;
+    left: 65px;
+    top: 100px;
+}
+
+
+.vierkantvraagteken {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+    background: url('../assets/images/vierkantvraagteken.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 140px;
+}
+
+.agendaicon2 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+    background: url('../assets/images/agenda.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 67px;
+    top: 355px;
+}
+
+.secondpwekker {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: 220px;
+	font-size: 1.5em;
+	color: #586B73;
+	font-family: bigg;
+	top: 240px;
+}
+
+
+.assetsgoeiemorgen {
+	position: absolute;
+	width: 221px;
+	height: 200px;
+    background: url('../assets/images/assetsgoeiemorgen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 140px;
+}
+
+.wekker {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+    background: url('../assets/images/wekker.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+}
+
+.adresverwacht {
+	position: absolute;
+	top: 150px;
+}
+
+.locationicon {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+    background: url('../assets/images/location.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 60px;
+    top: 105px;
+}
+
+.pijlplaats {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+    background: url('../assets/images/pijlplaats.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 150px;
+    top: 255px;
+}
+
+.agenda2 {
+	font-size: 1.4em;
+	padding-right: 15px;
+	text-align: right;
+	width: 190px;
+	font-family: bigg;
+	margin-top: 0px;
+	padding-top: 10px;
+	height: 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #F27402;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 350px;
+	left: 0;
+	right: 0;
+}
+
+
+.agenda {
+	font-size: 1.4em;
+	padding-right: 15px;
+	text-align: right;
+	width: 190px;
+	font-family: bigg;
+	margin-top: 0px;
+	padding-top: 10px;
+	height: 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #F27402;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 300px;
+	left: 0;
+	right: 0;
+}
+
+
+.containerwachtrij ul {
+	position: relative;
+}
+
+.iconheadwinnaar, 
+.iconhead2winnaar, 
+.iconhead1winnaar, 
+.iconhead3winnaar {
+	transition: 			all 1s ease;
+    -webkit-transition: 	all 1s ease; /** Chrome & Safari **/
+    -moz-transition: 		all 1s ease; /** Firefox **/
+    -o-transition: 			all 1s ease; /** Opera **/
+}
+
+.iconWinnaaranimatie {
+	top: 80px;
+    left: 65px;
+
+}
+
+
+.iconheadwinnaar {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	top: 280px;
+    left: 65px;
+
+}
+
+.iconhead1winnaar {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	top: 280px;
+    left: 115px;
+}
+
+.iconhead2winnaar {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	top: 280px;
+    left: 165px;
+}
+
+.iconhead3winnaar {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+	top: 280px;
+    left: 215px;
+}
+
+
+.iconhead1 {
+	opacity: 0.5;
+	position: absolute;
+	width: 65px;
+	height: 65px;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 167px;
+    top: 150px;
+}
+
+
+.iconhead2 {
+	opacity: 0.5;
+	position: absolute;
+	width: 65px;
+	height: 65px;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 87px;
+    top: 225px;
+}
+
+
+.iconhead3 {
+	opacity: 0.5;
+	position: absolute;
+	width: 65px;
+	height: 65px;
+    background: url('../assets/images/iconhead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 167px;
+    top: 225px;
+}
+
+
+.iconheadown {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+    background: url('../assets/images/iconheadown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 87px;
+    top: 150px;
+}
+
+
+
+
+
 * {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -123,7 +502,14 @@ hr {
     padding: 0;
 }
 
-#container2 p {
+#container2 p, 
+#containerwachtwoord p, 
+#containerwachtrij p, 
+#containerdag1verwacht p, 
+#containerdag1gastheer p:first-of-type,
+#containergoeiemorgen p,
+#containerwinnaar p
+ {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -136,18 +522,62 @@ hr {
 	margin-top: 65px;
 }
 
-#txtnaam {
+#containerwinnaarnafoto p:last-of-type {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: 215px;
+	font-size: 1.5em;
+	font-family: abelregular;
+	margin-top: 345px;
+}
+
+#containerwinnaarnafoto p:first-of-type {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: 215px;
+	font-size: 1.5em;
+	font-family: bigg;
+	margin-top: 65px;
+}
+
+#txtWachtwoord {
+	top: 150px;
+}
+.sleutel {
+	position: absolute;
+	width: 200px;
+	pointer-events: none;
+	height: 200px;
+	bottom: 259px;
+	right: 2px;
+    background: url('../assets/images/sleutel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#txtnaam {
 	top: 90px;
+}
+
+#txtnaam, #txtWachtwoord {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
 	left: 0;
 	right: 0;
 	font-size: 1.9em;
 	text-align: center;
 	font-family: abelregular;
 	width: 170px;
-	height: 25px;
+	height: 38px;
 	margin-top: 30px;
 	padding-top: 2px;
 	border: 4px solid #F27402;
@@ -227,8 +657,35 @@ hr {
 	display: none;
 }
 
+#containerwinnaar header h1, #containerwinnaarnafoto header h1 {
+	font-size: 1.5em;
+	text-align: center;
+	width: 280px;
+	font-size: 2.1em;
+	font-family: bigg;
+	margin-top: 0px;
+	padding-top: 10px;
+	height: 30px;
+	background-color: #F27402; 
+	text-decoration: none;
+	color: #fff;
+	//background-color: #586B73;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20px;
+	left: 0;
+	right: 0;
+}
 
-#container4 header h1, #container7 header h1 {
+
+#container4 header h1, 
+#container7 header h1, 
+#containerwachtwoord header h1, 
+#containerwachtrij header h1, 
+#containerdag1verwacht header h1,
+#containerdag1gastheer header h1,
+#containergoeiemorgen header h1 { 
 	font-size: 1.5em;
 	text-align: center;
 	width: 250px;
@@ -256,6 +713,18 @@ hr {
 	bottom: 155px;
 	right: 48px;
     background: url('../assets/images/landscape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -100;
+}
+
+.square {
+	position: absolute;
+	width: 320px;
+	height: 568px;
+	bottom: 40px;
+	right: 0;
+    background: url('../assets/images/square.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -100;
@@ -441,7 +910,8 @@ input[type=radio] {
 #container6, 
 #container7, 
 .scrollcontainer, 
-.scrollcontainer2 {
+.scrollcontainer2,
+#containerwachtwoord {
 	height: 540px;
 }
 
@@ -451,7 +921,8 @@ input[type=radio] {
 #container4, 
 #container5, 
 #container6, 
-#container7 {
+#container7,
+#containerwachtwoord {
 	position: relative;
 	width: 320px;
 	float: left;
@@ -464,7 +935,8 @@ input[type=radio] {
 #container4 p:last-of-child, 
 #container5 p:last-of-child, 
 #container6 p:last-of-child, 
-#container7 p:last-of-child {
+#container7 p:last-of-child,
+#containerwachtwoord p:last-of-child {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -525,7 +997,9 @@ input[type=radio] {
 #scrollto4,
 #scrollto5,
 #scrollto6,
-#scrollto7 {
+#scrollto7,
+#scrollto8,
+#containergoeiemorgenknopbeoordeel {
 	font-size: 1.5em;
 	text-align: center;
 	width: 200px;
@@ -545,14 +1019,18 @@ input[type=radio] {
 	top: 380px;
 	left: 0;
 	right: 0;
+
 }
 
 #scrollto3 {
 	width: 250px;
 }
 
+#scrollto8 {
+	width: 270px;
+}
 .scrollcontainer {
-	width: 2240px;
+	width: 800%;
 	transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22);
     -webkit-transition: all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Chrome & Safari **/
     -moz-transition: 	all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Firefox **/
@@ -566,6 +1044,7 @@ input[type=radio] {
 
 #bodywrapper {
 	height: 540px;
+	width: 320px;
 	overflow: hidden;
 }
 
@@ -593,7 +1072,6 @@ input[type=radio] {
 	margin-left: -1920px;
 }
 
-
 .movebitch7 {
 	margin-left: -2240px;
 }
@@ -612,18 +1090,7 @@ input[type=radio] {
 	width: 320px;
 
 }
-#followingLine{
-	position: absolute;
-	bottom: -12px;
-	opacity: 0.5;
-	z-index: -4;
-}
-.sunline{
-	transition: 		all 1s ease;
-    -webkit-transition: all 1s ease; /** Chrome & Safari **/
-    -moz-transition: 	all 1s ease; /** Firefox **/
-    -o-transition: 		all 1s ease; /** Opera **/
-}
+
 .sterren {
 	opacity: 1;
 	position: absolute;
@@ -644,7 +1111,7 @@ input[type=radio] {
 	background-size: cover;
 	height: 50px;
 	width: 50px;
-	z-index: -3;
+	z-index: -4;
 	transition: 			all 1s ease;
     -webkit-transition: 	all 1s ease; /** Chrome & Safari **/
     -moz-transition: 		all 1s ease; /** Firefox **/
@@ -731,9 +1198,6 @@ input[type=radio] {
   	margin-left: 126px;
   	margin-top: 150px;
 }
-
-
-
 .image-input-preview {
 	z-index: 10;
   	background-position: center center;
@@ -886,4 +1350,26 @@ input[type=radio] {
 }
 #humeur .svgout{
 	height: 220px;
+}
+#sunset{
+	 position: absolute;
+  	bottom: 0;
+}
+#followingline{
+	  width: 107%;
+	  margin-bottom: -18px;
+}
+.sunline{
+	transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22);
+    -webkit-transition: all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Chrome & Safari **/
+    -moz-transition: 	all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Firefox **/
+    -o-transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Opera **/
+}
+.sundown{
+	margin-bottom: -150px;
+	opacity: 0;
+	transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22);
+    -webkit-transition: all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Chrome & Safari **/
+    -moz-transition: 	all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Firefox **/
+    -o-transition: 		all 1s cubic-bezier(.68,-0.07,.38,1.22); /** Opera **/
 }

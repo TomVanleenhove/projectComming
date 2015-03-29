@@ -1,7 +1,7 @@
 var template = require('../../../_hbs/sunset.hbs');
 
 var SunsetView = Backbone.View.extend({
-
+	id: "sunset",
 	template: template,
 	changeStep: function(step){
 		var line = document.querySelector('.sunline');
